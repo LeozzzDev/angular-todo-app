@@ -7,12 +7,9 @@ import { Item } from '../models/item.model';
 export class TodosService {
 
   todos: Item[];
-
+  
   constructor() {
-    this.todos = [
-      new Item('this come from todos service'),
-      new Item('keep coding!'),
-    ];
+    this.todos = [];
   }
 
   getTodoItems(): Item[] {
